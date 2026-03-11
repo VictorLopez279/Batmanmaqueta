@@ -25,5 +25,17 @@ body {
 
 body > div {
   margin: 0 auto;
+  max-width: 550px;
+  text-align: center;
+}
+
+/* Hace que las tablas esten centradas */
+table {
+  margin: 0 auto;
+}
+
+/* Pone el carousel centrado */
+.carousel {
   max-width: 500px;
+  margin: 0 auto;
 }
