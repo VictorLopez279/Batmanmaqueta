@@ -20,6 +20,10 @@
     
     <!--  Conecta el archivo CSS  para los estilos -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap 5 (CSS + JS bundle) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-5SO2QOZP2kE8oGTuOBYc6Ij8tnDn4nzEutnVlcyRDyx6t49e3m1s9kNcNaW6jV0l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQta/mbrQy1UuEDl7u0A4FjEJwBvGsEz0iM5NhN+N13JZK2jzWn4UnIQ4i4XwqK4" crossorigin="anonymous" defer></script>
 </head>
 
 <!-- contenido visible de la página -->
@@ -27,10 +31,9 @@
   <!--para centrar la imagen principal -->
   <div class="image-container">
     <!--Imagen Principla -->
-    <img src="img/header_background.jpeg" width="1000" height="1000%" alt="'The Batman': la misteriosa escena post-créditos de la película de Matt Reeves esconde un nuevo enigma para los fans">
+    <img src="img/header_background.jpeg" width="10000" height="10000%"  alt="'The Batman': la misteriosa escena post-créditos de la película de Matt Reeves esconde un nuevo enigma para los fans">
   </div>  
-  
-  
+ 
   <div>
     <!-- Encabezado-->
     <h1>The Batman</h1>
@@ -79,28 +82,28 @@
   <!-- border="1" añade bordes a la tabla y cellpadding="10" añade espaciado interno de 10px -->
   <table border="1" cellpadding="10">
     
-    <!--  Define las tres columnas de la tabla -->
+    <!-- Define las tres columnas de la tabla -->
     <tr>
       <th>Fotografía</th>
       <th>Actor</th>
       <th>Papel</th>
     </tr>
     
-    <!-- FILA 1: Robert Pattinson - Imagen, nombre y papel de Batman -->
+    <!-- Robert Pattinson - Imagen nombre y papel de Batman -->
     <tr>
       <td><img src="img/OIP (1).webp" width="100" height="130"></td>
       <td>Robert Pattinson</td>
       <td>Bruce Wayne / Batman </td>
     </tr>
     
-    <!-- FILA 2: Zoë Kravitz - Imagen, nombre y papel de Catwoman -->
+    <!-- Zoë Kravitz - Imagen nombre y papel de Catwoman -->
     <tr>
       <td><img src="img/1379949-Selina-Kyle-Zoe-Kravitz-Catwoman-The-Batman-2022.jpg" width="100" height="130"></td>
       <td>Zoë Kravitz</td>
       <td>Selina Kyle / Catwoman</td>
     </tr>
     
-    <!-- FILA 3: Jeffrey Wright - Imagen, nombre y papel de James Gordon -->
+    <!-- Jeffrey Wright - Imagen, nombre y papel de James Gordon -->
     <tr>
       <td><img src="img/The-Batman-Jeffrey-Wright-Jim-Gordon.avif" width="100" height="130"></td>
       <td>Jeffrey Wright</td>
@@ -109,6 +112,27 @@
 
     </tr>
   </table>
+
+  <!-- Carousel de otras películas de Batman con enlaces a IMDb -->
+  <section class="container my-5">
+    <h2>Otras pelicula de Batman</h2>
+    <div id="batmanCarousel" class="carousel slide" data-bs-ride="carousel">
+          <img src="https://www.imdb.com/es/title/tt0096895/" class="d-block w-100" alt="Batman (1989)">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+            <img src="img/OIP (2).webp" width="100">
+            <p>Dirigida por Tim Burton. <a href="https://www.imdb.com/title/tt0096895/"  rel="noopener">Ver en IMDb</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.imdb.com/es/title/tt0468569/?ref_=fn_t_2" alt="Batman & Robin (1997)">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+           <img src="img/OIP.webp" width="100">
+            <p>Dirigida por Christopher Nolan. <a href="https://www.imdb.com/title/tt0372784/" target="_blank" rel="noopener">Ver en IMDb</a></p>
+          </div>
+        </div>
+      </div>
+  </section>
+
   </div>
 </body>
 </html>
